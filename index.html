@@ -29,7 +29,15 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 </head>
 
 <body id="page-top">
-    
+  <!-- 
+  <audio>
+    <source src="img\portfolio\GameDevelopment\About.mp3"></source>
+	  <source src="img\portfolio\GameDevelopment\Awards.mp3"></source>
+	  <source src="img\portfolio\GameDevelopment\Contact.mp3"></source>
+	  <source src="img\portfolio\GameDevelopment\Portfolio.mp3"></source>
+	  <source src="img\portfolio\GameDevelopment\Skills.mp3"></source>
+  </audio>
+    -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none  mx-0 px-0"><img src="img/logo-white.png" alt="" class="img-fluid"></span>
@@ -45,21 +53,21 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
                 </li>
-                <audio id="heartbeat" src="D:\software engineering\вту софтуерно инженерство\3-та година\6-ти семестър\Въведение в UXUI дизайн\упражения\mixkit-small-group-cheer-and-applause-518.wav" preload="auto"></audio>
+                <audio id="heartbeat" src="img\portfolio\GameDevelopment\rado.mp3" type="audio/mpeg" preload="auto"></audio>
                 <li id="exper" class="nav-item">
                     <a  class="nav-link js-scroll-trigger" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                 </li>
-                <audio id="rado" src="D:\software engineering\вту софтуерно инженерство\3-та година\6-ти семестър\Въведение в UXUI дизайн\упражения\step48v1-90486.mp3" preload="auto"></audio>
-                <li class="nav-item">
+               <!-- <audio id="rado" src="D:\software engineering\вту софтуерно инженерство\3-та година\6-ти семестър\Въведение в UXUI дизайн\упражения\step48v1-90486.mp3" preload="auto"></audio>
+                --><li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
                 </li>
-                <li class="nav-item">
+                <li id="contactNavMenu" class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                 </li>
             </ul>
@@ -72,7 +80,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                         ABOUT
     ======================================================-->
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-          <div class="my-auto" >
+          <div   class="my-auto" >
               <!--<img src="img/logo-s.png" class="img-fluid mb-3" alt="">
               -->
               <h1 class="mb-0">Radoslav
@@ -227,15 +235,25 @@ License URL: https://creativecommons.org/licenses/by/4.0/
               <div class="col-md-12">
                 <div class="port-head-cont">
                   <button class="btn btn-general btn-green filter-b" data-filter="all">All</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter="consulting">Web Design</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter="finance">Mobile Apps</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter="marketing">Graphics Design</button> 
+                  <button class="btn btn-general btn-green filter-b" data-filter="CMS">CMS</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="UXUI">Graphics Design & UX/UI</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="Animation">Animation</button> 
                   <button class="btn btn-general btn-green filter-b" data-filter="GameDevelopment">Game Development</button> 
-
+                  <button class="btn btn-general btn-green filter-b" data-filter="VideoEditing">Video editing</button> 
                 </div>
               </div>
           </div>
           <div class="row my-auto">
+            <div class="col-sm-4 portfolio-item filter VideoEditing">
+              <a class="portfolio-link" href="#GDRedHat" data-toggle="modal">
+                  <div class="caption-port">
+                      <div class="caption-port-content">
+                          <i class="fa fa-search-plus fa-3x"></i>
+                      </div>
+                  </div>
+                  <img class="img-fluid" src="img\portfolio\GameDevelopment\TheRedHat.png" alt="">
+              </a>
+            </div>
             <div class="col-sm-4 portfolio-item filter GameDevelopment">
               <a class="portfolio-link" href="#GDRedHat" data-toggle="modal">
                   <div class="caption-port">
@@ -266,7 +284,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                   <img class="img-fluid" src="img\portfolio\GameDevelopment\FlipCoinPreview.png" alt="">
               </a>
             </div>  
-            <div class="col-sm-4 portfolio-item filter finance">
+            <div class="col-sm-4 portfolio-item filter UXUI">
                   <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
                       <div class="caption-port">
                           <div class="caption-port-content">
@@ -276,7 +294,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                       <img class="img-fluid" src="img/portfolio/p-4.jpg" alt="">
                   </a>
               </div>
-              <div class="col-sm-4 portfolio-item filter marketing">
+              <div class="col-sm-4 portfolio-item filter Animation">
                   <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
                       <div class="caption-port">
                           <div class="caption-port-content">
@@ -286,7 +304,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                       <img class="img-fluid" src="img/portfolio/p-5.jpg" alt="">
                   </a>
               </div>
-              <div class="col-sm-4 portfolio-item filter consulting">
+              <div class="col-sm-4 portfolio-item filter CMS">
                   <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
                       <div class="caption-port">
                           <div class="caption-port-content">
@@ -296,7 +314,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                       <img class="img-fluid" src="img/portfolio/p-6.jpg" alt="">
                   </a>
               </div>              
-              <div class="col-sm-4 portfolio-item filter consulting">
+              <div class="col-sm-4 portfolio-item filter CMS">
                   <a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">
                       <div class="caption-port">
                           <div class="caption-port-content">
@@ -306,7 +324,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                       <img class="img-fluid" src="img/portfolio/p-7.jpg" alt="">
                   </a>
               </div>
-              <div class="col-sm-4 portfolio-item filter consulting">
+              <div class="col-sm-4 portfolio-item filter CMS">
                   <a class="portfolio-link" href="#portfolioModal8" data-toggle="modal">
                       <div class="caption-port">
                           <div class="caption-port-content">
@@ -316,7 +334,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                       <img class="img-fluid" src="img/portfolio/p-8.jpg" alt="">
                   </a>
               </div>
-              <div class="col-sm-4 portfolio-item filter finance">
+              <div class="col-sm-4 portfolio-item filter UXUI">
                   <a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
                       <div class="caption-port">
                           <div class="caption-port-content">
@@ -326,7 +344,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                       <img class="img-fluid" src="img/portfolio/p-9.jpg" alt="">
                   </a>
               </div>              
-              <div class="col-sm-4 portfolio-item filter marketing">
+              <div class="col-sm-4 portfolio-item filter Animation">
                   <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
                       <div class="caption-port">
                           <div class="caption-port-content">
@@ -336,7 +354,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                       <img class="img-fluid" src="img/portfolio/p-1.jpg" alt="">
                   </a>
               </div>
-              <div class="col-sm-4 portfolio-item filter marketing">
+              <div class="col-sm-4 portfolio-item filter Animation">
                   <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
                       <div class="caption-port">
                           <div class="caption-port-content">
@@ -346,7 +364,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                       <img class="img-fluid" src="img/portfolio/p-2.jpg" alt="">
                   </a>
               </div>
-              <div class="col-sm-4 portfolio-item filter finance">
+              <div class="col-sm-4 portfolio-item filter UXUI">
                   <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
                       <div class="caption-port">
                           <div class="caption-port-content">
@@ -652,7 +670,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             </div>
         </div>
     </div>
-
+<!-------------------------------------------------- Game Development---------------------------------------------------------------------------------------------------------------------------------------- -->
     <div class="portfolio-modal modal fade" id="GDRedHat" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -771,7 +789,63 @@ License URL: https://creativecommons.org/licenses/by/4.0/
           </div>
         </div>
     </div>
-    
+    <div class="portfolio-modal modal fade" id="GDFlipCoin" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl"></div>
+                  </div>
+              </div>
+              <div class="container">
+              <div class="row">
+                      <div class="modal-body">
+                          <div class="title-bar">
+                            <div class="col-md-12">
+                              <h2 class="text-center">Flip Coin</h2>
+                              <div class="heading-border"></div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img class="img-fluid img-centered" src="img\portfolio\GameDevelopment\FlipCoin.png" alt="">
+                            </div>
+                            <div class="col-md-6">
+                              <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                              <ul class="list-inline item-details">
+                                  <li>Source code:
+                                      <strong>
+                                        <a href="https://github.com/ruydiy/FlipCoin">From GitHub</a>
+                                      </strong>
+                                  </li>
+                                  <li>Program language: 
+                                    <strong>
+                                      <i> JavaScript</i>
+                                    </strong>
+                                  </li>
+                                  <li>Game link:
+                                      <strong>
+                                        <a href="https://ruydiy.github.io/FlipCoin/">Flip Coin </a>
+                                      </strong>
+                                  </li>
+                                  <li>Date: 
+                                      <strong>
+                                        <i> May 2022</i>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                  <i class="fa fa-times"></i> Close
+                              </button>
+                            </div>
+                        </div>
+                      </div>
+              </div>
+          </div>
+          </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -1119,14 +1193,17 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
         });
     </script> 
-    <script>
+    
+    <script>  
+      /*
       var audio = document.getElementById("heartbeat");
       var txt = document.getElementById("exper");
 
+      
       function play() {
-      audio.play();
+        audio.play();
       }
-    
+
       function stop() {
       audio.pause();
       audio.currentTime = 0;
@@ -1134,6 +1211,28 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
       txt.addEventListener('mouseover', play);
       txt.addEventListener('mouseout', stop);
+      */
+
+      var audioArray = [ 
+        new Audio("img/portfolio/GameDevelopment/Awards.mp3"),
+        new Audio("img/portfolio/GameDevelopment/About.mp3"),
+        new Audio("img/portfolio/GameDevelopment/Contact.mp3")];
+
+      function playAudio(numAudio){
+      audioArray[numAudio].play();
+      }
+
+      function pauseAudio(numAudio){
+      audioArray[numAudio].pause();
+      audioArray[numAudio].currentTime = 0;
+      }
+
+     document.getElementById("contactNavMenu").addEventListener("mouseover", function(){
+      playAudio(0);
+     });
+     document.getElementById("contactNavMenu").addEventListener("mouseout", function(){
+      pauseAudio(0);
+     });
 
     </script>
 </body>

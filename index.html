@@ -438,13 +438,53 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <div class="mb-5 heading-border"></div>
               </div> 
               <div class="main-award" id="award-box">
+                <div id="Award6" class="award">
+                  <div class="award-icon"></div>
+                  <div class="award-content">
+                      <span class="date">Mar 2023 - Apr 2023</span>
+                      <h5 class="title"> QA Basics - March 2023, Softuni</h5>
+                      <p class="description">
+                           Honorable 5.47/6.00
+                      </p>
+                  </div>
+                </div>
+                <div id="Award5" class="award">
+                  <div class="award-icon"></div>
+                  <div class="award-content">
+                      <span class="date">Jan 2019 - Apr 2019</span>
+                      <h5 class="title">Programming basic with PHP, Softuni</h5>
+                      <p class="description">
+                        Honorable 6.00/6.00
+                      </p>
+                  </div>
+              </div>
+              <div id="Award4" class="award">
+                <div class="award-icon"></div>
+                  <div class="award-content">
+                    <span class="date">October 2018</span>
+                    <h5 class="title">Gabrovo Digital summit 2018</h5>
+                    <p class="description">
+                    FFW  
+                    </p>
+                  </div>
+                </div>
+                <div id="Award3" class="award">
+                      <div class="award-icon"></div>
+                      <div class="award-content">
+                          <span class="date">Apr 2018 - May 2018</span>
+                          <h5 class="title">Microsoft Office Excel® 2016 Specialist</h5>
+                          <p class="description">
+                            Certification in High School
+                          </p>
+                      </div>
+                  </div>
                 <div id="Award1" class="award">
                   <div class="award-icon"></div>
                   <div class="award-content">
                       <span class="date">Oct 2016 - Dec 2016</span>
                       <h5 class="title">Gabrovo Inovation Camp certificate</h5>
                       <p class="description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                        Outclass activity Outclass activityOutclass activityOutclass activityOutclass activityOutclass activityOutclass activityOutclass activityOutclass activityOutclass activityOutclass activityOutclass activityOutclass activityOutclass activityOutclass activity
                       </p>
                   </div>
                 </div>
@@ -458,36 +498,9 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                           </p>
                       </div>
                   </div>
-                  <div id="Award3" class="award">
-                      <div class="award-icon"></div>
-                      <div class="award-content">
-                          <span class="date">Apr 2018 - May 2018</span>
-                          <h5 class="title">Microsoft Office Excel® 2016 Specialist</h5>
-                          <p class="description">
-                            Certification in High School
-                          </p>
-                      </div>
-                  </div>
-                  <div id="Award4" class="award">
-                    <div class="award-icon"></div>
-                      <div class="award-content">
-                        <span class="date">October 2018</span>
-                        <h5 class="title">Gabrovo Digital summit 2018</h5>
-                        <p class="description">
-                        FFW  
-                        </p>
-                      </div>
-                    </div>
-                  <div id="Award5" class="award">
-                    <div class="award-icon"></div>
-                    <div class="award-content">
-                        <span class="date">Jan 2019 - Apr 2019</span>
-                        <h5 class="title">Programming basic with PHP honorable 6.00/6.00</h5>
-                        <p class="description">
-                        Softuni  
-                        </p>
-                    </div>
-                </div>
+                  
+                  
+                  
               </div>
             </div>
       </section> 
@@ -1255,7 +1268,16 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         new Audio("audio/NavCon.mp3"),
         new Audio("audio/NavExp.mp3"),
         new Audio("audio/NavPor.mp3"),
-        new Audio("audio/NavSkills.mp3")];
+        new Audio("audio/NavSkills.mp3"),
+        //About
+        new Audio("audio/intro.mp3"),
+        new Audio("audio/RTs.mp3"),
+        new Audio("audio/LFac.mp3"),
+        new Audio("audio/LGit.mp3"),
+        new Audio("audio/LIns.mp3"), //10
+        new Audio("audio/LLin.mp3"),
+        new Audio("audio/LSky.mp3"),
+        new Audio("audio/LYT.mp3")];
 
       function playAudio(numAudio){
       audioArray[numAudio].play();
@@ -1265,7 +1287,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
       audioArray[numAudio].pause();
       audioArray[numAudio].currentTime = 0;
       }
-
+/////Navigation audio//////////////////////////////////////////////////////////////////////////
      document.getElementById("navAbout").addEventListener("mouseover", ()=>{playAudio(0);});
      document.getElementById("navAbout").addEventListener("mouseout", ()=>{pauseAudio(0);});
 
@@ -1283,7 +1305,33 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
      document.getElementById("navSki").addEventListener("mouseover", ()=>{playAudio(5);});
      document.getElementById("navSki").addEventListener("mouseout", ()=>{pauseAudio(5);});
+///////About Section////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    document.getElementById("RadoslavTsankov").addEventListener("mouseover", ()=>{playAudio(7);});
+    document.getElementById("RadoslavTsankov").addEventListener("mouseout", ()=>{pauseAudio(7);});
+    
+    document.getElementById("resume").addEventListener("mouseover", ()=>{playAudio(6);});
+    document.getElementById("resume").addEventListener("mouseout", ()=>{pauseAudio(6);});
+    
+    document.getElementById("Flink").addEventListener("mouseover", ()=>{playAudio(8);});
+    document.getElementById("Flink").addEventListener("mouseout", ()=>{pauseAudio(8);});
+
+    document.getElementById("Ilink").addEventListener("mouseover", ()=>{playAudio(10);});
+    document.getElementById("Ilink").addEventListener("mouseout", ()=>{pauseAudio(10);});
+    
+    document.getElementById("Slink").addEventListener("mouseover", ()=>{playAudio(12);});
+    document.getElementById("Slink").addEventListener("mouseout", ()=>{pauseAudio(12);});
+    
+    document.getElementById("YTlink").addEventListener("mouseover", ()=>{playAudio(13);});
+    document.getElementById("YTlink").addEventListener("mouseout", ()=>{pauseAudio(13);});
+    
+    document.getElementById("Llink").addEventListener("mouseover", ()=>{playAudio(11);});
+    document.getElementById("Llink").addEventListener("mouseout", ()=>{pauseAudio(11);});
+    
+    document.getElementById("Glink").addEventListener("mouseover", ()=>{playAudio(9);});
+    document.getElementById("Glink").addEventListener("mouseout", ()=>{pauseAudio(9);});
+    
+    
     </script>
 </body>
 

@@ -51,12 +51,12 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    <a id="navAbout" class="nav-link js-scroll-trigger" href="#about">About</a>
                 </li>
                <!-- <audio id="heartbeat" src="img\portfolio\GameDevelopment\rado.mp3" type="audio/mpeg" preload="auto"></audio>
                 -->
                 <li  class="nav-item">
-                    <a id="NavExp" class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                    <a id="navExp" class="nav-link js-scroll-trigger" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a id="navPor" class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -1231,7 +1231,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     </script> 
     
     <script>  
-      
+      /*
       var audio = document.getElementById("heartbeat");
       var txt = document.getElementById("exper");
 
@@ -1245,14 +1245,17 @@ License URL: https://creativecommons.org/licenses/by/4.0/
       audio.currentTime = 0;
       }
 
-      txt.addEventListener('mouseover', play);
-      txt.addEventListener('mouseout', stop);
-      
+      //txt.addEventListener('mouseover', play);
+      //txt.addEventListener('mouseout', stop);
+      */
 
       var audioArray = [ 
-        new Audio("img/portfolio/GameDevelopment/Awards.mp3"),
-        new Audio("img/portfolio/GameDevelopment/About.mp3"),
-        new Audio("img/portfolio/GameDevelopment/Contact.mp3")];
+        new Audio("audio/NavAbout.mp3"),
+        new Audio("audio/NavAwa.mp3"),
+        new Audio("audio/NavCon.mp3"),
+        new Audio("audio/NavExp.mp3"),
+        new Audio("audio/NavPor.mp3"),
+        new Audio("audio/NavSkills.mp3")];
 
       function playAudio(numAudio){
       audioArray[numAudio].play();
@@ -1263,12 +1266,23 @@ License URL: https://creativecommons.org/licenses/by/4.0/
       audioArray[numAudio].currentTime = 0;
       }
 
-     document.getElementById("contactNavMenu").addEventListener("mouseover", ()=>{
-      playAudio(0);
-     });
-     document.getElementById("contactNavMenu").addEventListener("mouseout", function(){
-      pauseAudio(0);
-     });
+     document.getElementById("navAbout").addEventListener("mouseover", ()=>{playAudio(0);});
+     document.getElementById("navAbout").addEventListener("mouseout", ()=>{pauseAudio(0);});
+
+     document.getElementById("navAwa").addEventListener("mouseover", ()=>{playAudio(1);});
+     document.getElementById("navAwa").addEventListener("mouseout", ()=>{pauseAudio(1);});
+
+     document.getElementById("navCon").addEventListener("mouseover", ()=>{playAudio(2);});
+     document.getElementById("navCon").addEventListener("mouseout", ()=>{pauseAudio(2);});
+
+     document.getElementById("navExp").addEventListener("mouseover", ()=>{playAudio(3);});
+     document.getElementById("navExp").addEventListener("mouseout", ()=>{pauseAudio(3);});
+
+     document.getElementById("navPor").addEventListener("mouseover", ()=>{playAudio(4);});
+     document.getElementById("navPor").addEventListener("mouseout", ()=>{pauseAudio(4);});
+
+     document.getElementById("navSki").addEventListener("mouseover", ()=>{playAudio(5);});
+     document.getElementById("navSki").addEventListener("mouseout", ()=>{pauseAudio(5);});
 
     </script>
 </body>
